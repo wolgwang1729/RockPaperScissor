@@ -8,10 +8,10 @@ The goal of this project is to detect the rock, paper and scissors in the image
 The model architecture used is Faster R-CNN with a ResNet-50 Feature Pyramid Network backbone.
 
 ## Dataset
-The dataset used for training the model is obtained from Roboflow. The dataset contains images of hands showing rock, paper, and scissors gestures. The dataset is split into training, validation, and test sets.
+The dataset used for training the model is obtained from [Roboflow](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw/dataset/14). The dataset contains images of hands showing rock, paper, and scissors gestures. The dataset is split into training, validation, and test sets.
 
 ## Training
-The model is trained using the Detectron2 library. The training is done for 1500 iterations with a batch size of 2.<\br>
+The model is trained using the Detectron2 library. The training is done for 1500 iterations with a batch size of 2.<br/>
 Configuration used for Training :
 ```python
 cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"))
